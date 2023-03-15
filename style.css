@@ -283,6 +283,7 @@ header .container nav ul li a{
 #about button:hover{
     transform: scale(1.03);
     transition: 0.5s;
+    cursor: pointer;
 }
 
 #about input:focus, #about textarea:focus{
