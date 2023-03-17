@@ -41,10 +41,10 @@ header{
 header .container{
     display: flex;
     align-items: center;
-    max-width: 1280px;
     margin: 0 auto;
     justify-content: space-between;
     flex-wrap: wrap;
+    max-width: 1000px;
 }
 
 header .container img{
