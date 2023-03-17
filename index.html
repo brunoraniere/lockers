@@ -29,9 +29,6 @@
                     <li>
                         <a href="#about">Fale Conosco</a>
                     </li>
-                    <li>
-                        <a href="#contato">Contato</a>
-                    </li>
                 </ul>
             </nav>
         </div>
@@ -123,7 +120,7 @@
 
     <section id="valores">
         <div class="container">
-            <h2>Valores</h2><br>
+            <h2>Sobre Nós</h2><br>
             <div class="valores">
                 <article>
                     <img src="imagens/alvo.png" alt="foto de um alvo">
@@ -158,10 +155,15 @@
                     <h3>Falamos com você</h3>
                     <form id="form-contato">
                         <input id="nome" type="text" placeholder="Seu nome completo"><br>
+                        <p class="error">
+                            nome não está completo
+                        </p>
                         <input id="email" type="email" placeholder="Seu email"><br>
                         <input id="telefone" type="tel" placeholder="Seu telefone"><br>
                         <textarea id="mensagem" placeholder="Sua mensagem" cols="30" rows="10"></textarea>
                         <button type="submit">Enviar</button>
+                        <p class="sucess-message">
+                        </p>
                     </form>
                 </article>
                 <article>

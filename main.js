@@ -1,5 +1,7 @@
 console.log("olá mundo")
 const form = document.getElementById('form-contato')
+const nome = document.getElementById('nome')
+let formEValido = false;
 
 function validarNome(nomeCompleto){
     const nomeComoArray = nomeCompleto.split(' ')
@@ -7,28 +9,41 @@ function validarNome(nomeCompleto){
 }
 
 form.addEventListener('submit', function(e){
-    let formEValido = false;
     
     e.preventDefault();
-
-    const nome = document.getElementById('nome')
+    
     const telefone = document.getElementById('telefone')
     const email = document.getElementById('email')
     const mensagem = document.getElementById('mensagem')
-    const mensagemSucesso = `Email enviado para ${email.value} \nDestinatário: ${nome.value.split(' ')[0]}\nTelefone: ${telefone.value}`;
+    const mensagemSucesso = `Destinatário: <strong>${nome.value.split(' ')[0]}</strong><br>Email: <strong>${email.value.split('@')[0]}</strong><br>Domínio: <strong>${'@' + email.value.split('@')[1]}</strong><br>\nTelefone: <strong>${telefone.value}</strong>`;
 
     formEValido = validarNome(nome.value)
     if(formEValido){
-        alert(mensagemSucesso)
-
+        const containerMensagemSucesso = document.querySelector('.sucess-message');
+        containerMensagemSucesso.innerHTML = mensagemSucesso;
+        containerMensagemSucesso.style.display = 'block';
+        
+        mensSuc
         nome.value = ''
-        telefone.value = ''
         email.value = ''
+        telefone.value = ''
         mensagem.value = ''
 
     } else {
-        alert("O nome não está completo")
+        nome.style.border = '1px solid red'
+        document.querySelector('.error').style.display = "block";
     }
 })
 
-console.log(form);
+nome.addEventListener('keyup', function(e){
+    console.log(e.target.value);
+    formEValido = validarNome(e.target.value);
+
+    if(!formEValido){
+        nome.classList.add('error1');
+        document.querySelector('.error').style.display = "block";
+    } else{
+        nome.classList.remove('error1');
+        document.querySelector('.error').style.display = "none";
+    }
+});

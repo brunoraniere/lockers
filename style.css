@@ -65,7 +65,7 @@ header .container nav ul li a{
 }
 
 .container{
-    max-width: 1280px;
+    max-width: 1000px;
     margin: 30px auto 30px auto;
 }
 
@@ -90,17 +90,19 @@ header .container nav ul li a{
     justify-content: space-between;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     margin: 60px auto ;
+    align-items: center;
 }
 #lockers .container img{
     border-radius: 40px;
-    max-width: 100%;
+    max-width: 90%;
+    margin: auto;
 }
 #lockers .container article{
     width: 50%;
 }
 
 #lockers .container article p{
-    font-size: 25px;
+    font-size: 20px;
     margin-left: 70px;
     margin-top: 15px;
     margin-right: 70px;
@@ -112,7 +114,8 @@ header .container nav ul li a{
     padding: 15px;
     font-size: 25px;
     font-weight: bold;
-    margin: 30px 350px 0px 70px;
+    width: 200px;
+    margin: 30px 0px 30px 70px;
     display: block;
     border-radius: 15px;
     text-align: center;
@@ -140,7 +143,7 @@ header .container nav ul li a{
 
 .vendas p{
     margin-left: 10px;
-    font-size: 20px;
+    font-size: 17px;
     padding: 10px;
 }
 .vendas .price{
@@ -209,7 +212,7 @@ header .container nav ul li a{
     width: 90%;
     margin: 30px auto;
     padding: 0 30px;
-    font-size: 20px;
+    font-size: 17px;
     text-align: justify;
 }
 
@@ -290,15 +293,25 @@ header .container nav ul li a{
     outline-color: #EA542D;
 }
 
+.error{
+    color: #EA542D;
+    margin-left: 5px;
+    font-size: 15px;
+    display: none;
+}
 
+.sucess-message{
+    color: white;
+    background-color: #EA542D;
+    width: 250px;
+    margin: 15px 5px    ;
+    padding: 10px;
+    display: none;
+}
 
-
-
-
-
-
-
-
+.sucess-message strong{
+    color: white;
+}
 
 
 footer{
@@ -320,4 +333,10 @@ footer p {
 
 footer img{
     width: 200px;
+}
+
+input.error1{
+    color: red;
+    border-color: red;
+    outline-color: red;
 }
