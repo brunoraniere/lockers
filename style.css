@@ -15,65 +15,61 @@ strong{
     font-weight: bold;
 }
 
-img{
-    display: block;
-}
-
 a{
     text-decoration: none;
 }
 
-ul{
-    list-style: none;
-}
-
 body{
-    background-color: #ffffff;
+    background-color: white;
     font-family: 'Roboto', sans-serif;
 }
 
-header{
+header.navbar{
     background-color: #EA542D;
-    padding: 30px 0px;
-    margin-bottom: 60px;
+    padding: 25px 0;
 }
 
-header .container{
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1000px;
-}
-
-header .container img{
+.navbar img{
     max-height: 60px;
 }
 
-header .container nav ul{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+nav .nav-pills .nav-link:hover{
+    color: white;
 }
+
+nav .nav-pills .nav-link.active{
+    background-color: white;
+    color: #EA542D;
+}
+
+.navbar .navbar-toggler{
+    border: none;
+}
+
+.navbar .navbar-toggler-icon{
+    background-image: url(imagens/menu-hamburguer.png);
+
+}
+
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255,102,203);
+} 
 
 header .container nav ul li a{
     font-size: 130%;
     font-weight: bolder;
-    padding: 0px 20px;
     color: white;
 }
 
-.container{
-    max-width: 1000px;
-    margin: 30px auto 30px auto;
-}
-
-    h2{
-    font-weight: bold;
-    font-size: 50px;    
-    margin: 40px 0px 40px 70px;
-    color: #EA542D;
+h2{
+font-weight: bold;
+font-size: 50px;    
+margin: 40px 0px 40px 70px;
+color: #EA542D;
 }
 
 #praia img{
@@ -339,4 +335,25 @@ input.error1{
     color: red;
     border-color: red;
     outline-color: red;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    header.navbar{
+        font-size: 86%;
+    }
+    header.navbar img{
+        max-height: 50px;
+    }
+}
+
+@media screen and (max-width: 990px){
+    header.navbar{
+        font-size: 86%;
+    }
+    header.navbar img{
+        max-height: 50px;
+    }
+    nav .nav.nav-pills{
+        margin-top: 20px;
+    }
 }
