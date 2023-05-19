@@ -316,11 +316,19 @@ header.navbar .navbar-toggler:focus{
     #surf .struc-ecommerce{
         grid-template-columns: 100%;
     }
+
+    #contato #fale-conosco{
+        margin-top: 20px;
+    }
 } 
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 549px){
     header.navbar img{
         max-height: 45px;
+    }
+
+    footer span{
+        display: none;
     }
 }
 
