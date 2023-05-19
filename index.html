@@ -6,146 +6,270 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto+Mono:wght@100;200;300;400;500;600;700&family=Roboto:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Lockers</title>
 </head>
 <body>
     <header id="cabecalho" class="navbar navbar-expand-lg sticky-top">
         <div class="container">
-            <img src="imagens/logo_lockers_80.png" alt="logo da lockers">
+            <img src="imagens/icon/logo_lockers_80.png" alt="logo da lockers">
             <button type="button" class="custom-toggler navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                 <span class="navbar-toggler-icon navbar"></span>
             </button>
             <nav id="menu" class="collapse navbar-collapse justify-content-end">
                 <ul class="nav nav-pills d-block d-md-flex">
                     <li class="nav-item">
-                        <a class="nav-link" href="#lockers">Lockers</a>
+                        <a class="nav-link" href="#lockers"><i class="bi bi-lock"></i>Lockers</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#surfboards">Surfboards</a>
+                        <a class="nav-link" href="#surf"><i class="bi bi-water"></i>Surf</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#acessorios">Acessórios</a>
+                        <a class="nav-link" href="#sobre-nos"><i class="bi bi-person-fill"></i>Sobre Nós</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="#valores">Sobre Nós</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#about">Fale Conosco</a>
+                        <a class="nav-link" href="#contato"><i class="bi bi-chat"></i>Contato</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <div data-bs-spy="scroll" data-bs-smooth-scroll="true" data-bs-target="cabecalho">
-        <section id="praia">
+    <main data-bs-spy="scroll" data-bs-smooth-scroll="true" data-bs-target="cabecalho">
+        <section id="praia" class="p-0">
             <div id="carousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="2000">
-                        <img src="imagens/surf1500.jpg" alt="surfista surfando">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <picture>
+                            <source media="(max-width: 700px)" srcset="imagens/slide/slide2_foto_da_lockers_entrada_1920_p.jpg">
+                            <img src="imagens/slide/slide2_foto_da_lockers_entrada_1920.jpg" alt="entrada da loja lockers">
+                        </picture>
                     </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="imagens/surf1500.jpg" alt="surfista surfando">
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <picture>
+                            <source media="(max-width: 700px)" srcset="imagens/slide/slide1_surf1920_p.jpg">
+                            <img src="imagens/slide/slide1_surf1920.jpg" alt="surfista manobra aero surf">
+                        </picture>
                     </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="imagens/surf1500.jpg" alt="surfista surfando">
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <picture>
+                            <source media="(max-width: 700px)" srcset="imagens/slide/slide3_casal_praia_1920_p.jpg">
+                            <img src="imagens/slide/slide3_casal_praia_1920.jpg" alt="casal na praia">
+                        </picture>
                     </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button class="active" type="button" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
                 </div>
             </div>
         </section>
         <section id="lockers">
             <div class="container">
+                <h2>Lockers</h2>
                 <article>
-                    <h2>Lockers</h2>
-                    <p>Surf? Praia? Armários? Muito mais que isso, nós da Lockers estamos dispostos para trazer a melhor <strong>EXPERIÊNCIA</strong> ao utilizar nossos serviços e produtos. Segurança e qualidade são o nosso forte. Confira nossos <strong>Lockers Digitais</strong> e faça sua reserva.</p>
-                    <p>Nossos armários possuem uma tecnologia onde não há chave ou cadeado, apenas com um QR Code você tem acesso ao seu Locker o que garante muito mais a segurança de seus pertences e sua comodidade.</p>
-                    <a href="outrapagina.html">Reservar Locker</a>
-                </article>
-                <article>
-                    <img src="imagens/IMG_3840_800.png" alt="foto armarios digitais">
+                        <img class="w-100 mb-4 d-block rounded" src="imagens/section-lockers/armarios-quadrados-laranjas.jpg.png"foto armarios digitais">
+                    <div class="sobre-armarios">
+                        <h3>Experiência</h3>
+                        <p>Surf? Praia? Armários? Muito mais que isso, nós da Lockers estamos dispostos para trazer a melhor <strong>EXPERIÊNCIA</strong> ao utilizar nossos serviços e produtos. Segurança e qualidade são o nosso forte. Confira nossos <strong>Lockers Digitais</strong> e faça sua reserva.</p>
+                        <h3>Segurança</h3>
+                        <p>Nossos armários possuem uma tecnologia onde não há chave ou cadeado, apenas com um QR Code você tem acesso ao seu Locker o que garante muito mais a segurança de seus pertences e sua comodidade.</p>
+                        <button class="botao d-block" type="button" data-bs-toggle="modal" data-bs-target="#modal-locker">
+                            Reservar Locker
+                        </button>
+                        <div id="modal-locker" class="modal"> <!-- data-bs-backdrop="static" --> 
+                            <div class="modal-dialog modal-xl">
+                                <div class="modal-content">
+                                    <div class="modal-header mb-3">
+                                        <h4>Reservar Locker</h4>
+                                    </div>
+                                    <div class="modal-body p-0">
+                                        <div class="corpo-modal">
+                                            <div class="card mb-4">
+                                                <header class="card-header">
+                                                    <h5>Locker Grande</h5>
+                                                </header>
+                                                <div class="card-body">
+                                                    <img class="w-100" src="https://via.placeholder.com/300x300/ffeae6" alt="Locker Grande">
+                                                </div>
+                                                <footer class="card-footer">
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <span class="preco">R$ 15,00</span>
+                                                        <button class="botao b-reservar" data-bs-dismiss="modal">
+                                                            Reservar
+                                                        </button>
+                                                    </div>
+                                                </footer>
+                                            </div>
+                                            <div class="corpo-modal">
+                                                <div class="card mb-4">
+                                                    <header class="card-header">
+                                                        <h5>Locker Pequeno</h5>
+                                                    </header>
+                                                    <div class="card-body">
+                                                        <img class="w-100" src="https://via.placeholder.com/300x300/ffeae6" alt="Locker Grande">
+                                                    </div>
+                                                    <footer class="card-footer">
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <span class="preco">R$ 12,00</span>
+                                                            <button class="botao b-reservar" data-bs-dismiss="modal">
+                                                                Reservar
+                                                            </button>
+                                                        </div>
+                                                    </footer>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer justify-content-end">
+                                        <button type="button" class="botao b-cancel font-weight-bold" data-bs-dismiss="modal">Cancelar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </article>
             </div>
         </section>
-        <section id="surfboards">
+        <section id="surf">
             <div class="container">
-                <h2>Surfboards</h2><br>
-                <div class="vendas">
-                    <a href="outrapagina.html">
-                        <article>
-                            <img src="imagens/5'10_400.png" alt="prancha 5'10">
-                            <h3>5'10" - Felipe Souto</h3>
-                            <p class="price">R$ 1490,00</p>
-                            <p class="click">Clique para mais</p>
-                        </article>
-                    </a>
-                    <a href="outrapagina.html">
-                        <article>
-                            <img src="imagens/6'6_400.png" alt="prancha 6'6">
-                            <h3>6'6" - Felipe Souto</h3>
-                            <p class="price">R$ 1790,00</p>
-                            <p class="click">Clique para mais</p>
-                        </article>
-                    </a>
-                    <a href="outrapagina.html">
-                        <article>
-                            <img src="imagens/7'0_400.png" alt="prancha 7'0">
-                            <h3>7'0" - Felipe Souto</h3>
-                            <p class="price">R$ 2090,00</p>
-                            <p class="click">Clique para mais</p>
-                        </article>
-                    </a>
+                <h2>Surf</h2>
+                <nav class="nav nav-pills">
+                    <button type="button" data-bs-toggle="tab" data-bs-target="#surfboards" class="nav-link active"><i class="bi bi-water"></i>Surfboards</button>
+                    <button type="button" data-bs-toggle="tab" data-bs-target="#acessorios" class="nav-link"><i class="bi bi-sunglasses"></i>Acessórios</button>
+                    <button type="button" data-bs-toggle="tab" data-bs-target="#aluguel" class="nav-link"><i class="bi bi-cash-stack"></i>Aluguel</button>
+                </nav>
+                <div class="tab-content">
+                    <div id="surfboards" class="tab-pane active">
+                        <div class="struc-ecommerce">
+                            <article class="ecommerce-item">
+                                <div class="ecommerce-item-struc">
+                                    <img src="imagens/section-surf/surfboards/5'10_400.png" alt="prancha 5'10">
+                                    <h3>5'10"- Felipe Souto</h3>
+                                    <p class="preco">R$ 1490,00</p>
+                                </div>
+                                <button type="button" class="botao b-comprar">Comprar</button>
+                            </article>
+                            <article class="ecommerce-item">
+                                <div class="ecommerce-item-struc">
+                                    <img src="imagens/section-surf/surfboards/6'6_400.png" alt="prancha 6'6">
+                                    <h3>6'6"- Felipe Souto</h3>
+                                    <p class="preco">R$ 1790,00</p>
+                                </div>
+                                <button type="button" class="botao b-comprar">Comprar</button>
+                            </article>
+                            <article class="ecommerce-item">
+                                <div class="ecommerce-item-struc">
+                                    <img src="imagens/section-surf/surfboards/7'0_400.png" alt="prancha 7'0">
+                                    <h3>7'0"- Felipe Souto</h3>
+                                    <p class="preco">R$ 2090,00</p>
+                                </div>
+                                <button type="button" class="botao b-comprar">Comprar</button>
+                            </article>
+                            <article class="ecommerce-item">
+                                <div class="ecommerce-item-struc">
+                                    <img src="imagens/section-surf/surfboards/7'0_400.png" alt="prancha 7'0">
+                                    <h3>7'0"- Felipe Souto</h3>
+                                    <p class="preco">R$ 2090,00</p>
+                                </div>
+                                <button type="button" class="botao b-comprar">Comprar</button>
+                            </article>
+                            <article class="ecommerce-item">
+                                <div class="ecommerce-item-struc">
+                                    <img src="imagens/section-surf/surfboards/7'0_400.png" alt="prancha 7'0">
+                                    <h3>7'0"- Felipe Souto</h3>
+                                    <p class="preco">R$ 2090,00</p>
+                                </div>
+                                <button type="button" class="botao b-comprar">Comprar</button>
+                            </article>
+                        </div>
+                    </div>
+                    <div id="acessorios" class="tab-pane">
+                        <div class="struc-ecommerce">
+                            <article class="ecommerce-item">
+                                <div class="ecommerce-item-struc">
+                                    <img src="imagens/section-surf/acessorios/quilha.png" alt="Quilha de surf">
+                                    <h3>Quilha - Bottom Fins</h3>
+                                    <p class="preco">R$ 290,00</p>
+                                </div>
+                                <button type="button" class="botao b-comprar">Comprar</button>
+                            </article>
+                            <article class="ecommerce-item">
+                                <div class="ecommerce-item-struc">
+                                    <img src="imagens/section-surf/acessorios/quilha.png" alt="Quilha de surf">
+                                    <h3>Quilha - Bottom Fins</h3>
+                                    <p class="preco">R$ 290,00</p>
+                                </div>
+                                <button type="button" class="botao b-comprar">Comprar</button>
+                            </article>
+                            <article class="ecommerce-item">
+                                <div class="ecommerce-item-struc">
+                                    <img src="imagens/section-surf/acessorios/quilha.png" alt="Quilha de surf">
+                                    <h3>Quilha - Bottom Fins</h3>
+                                    <p class="preco">R$ 290,00</p>
+                                </div>
+                                <button type="button" class="botao b-comprar">Comprar</button>
+                            </article>
+                        </div>
+                    </div>
+                    <div id="aluguel" class="tab-pane">
+                        <div class="struc-ecommerce">
+                            <article class="ecommerce-item">
+                                <div class="ecommerce-item-struc">
+                                    <img src="imagens/section-surf/surfboards/6'6_400.png" alt="Quilha de surf">
+                                    <h3>6'6"- Felipe Souto</h3>
+                                    <p class="preco">R$ 70,00</p>
+                                </div>
+                                <button type="button" class="botao b-comprar">Alugar</button>
+                            </article>
+                            <article class="ecommerce-item">
+                                <div class="ecommerce-item-struc">
+                                    <img src="imagens/section-surf/acessorios/quilha.png" alt="Quilha de surf">
+                                    <h3>Quilha - Bottom Fins</h3>
+                                    <p class="preco">R$ 15,00</p>
+                                </div>
+                                <button type="button" class="botao b-comprar">Alugar</button>
+                            </article>
+                            <article class="ecommerce-item">
+                                <div class="ecommerce-item-struc">
+                                    <img src="imagens/section-surf/acessorios/strep.png" alt="Quilha de surf">
+                                    <h3>Strep - Banana Wax</h3>
+                                    <p class="preco">R$ 10,00</p>
+                                </div>
+                                <button type="button" class="botao b-comprar">Alugar</button>
+                            </article>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="acessorios">
+        <section id="sobre-nos">
             <div class="container">
-                <h2>Acessórios</h2>
-                <div class="vendas">
-                    <a href="outrapagina.html">
-                        <article>
-                            <img src="imagens/parafina.png" alt="parafina">
-                            <h3>Parafina - Banana Wax</h3>
-                            <p class="price">R$ 20,00</p>
-                            <p class="click">Clique para mais</p>
-                        </article>
-                    </a>
-                    <a href="outrapagina.html">
-                        <article>
-                            <img src="imagens/quilha.png" alt="quilhas">
-                            <h3>Quilha - Bottom Fins</h3>
-                            <p class="price">R$ 290,00</p>
-                            <p class="click">Clique para mais</p>
-                        </article>
-                    </a>
-                    <a href="outrapagina.html">
-                        <article>
-                            <img src="imagens/strep.png" alt="strep">
-                            <h3>Strep - Banana Wax</h3>
-                            <p class="price">R$ 149,00</p>
-                            <p class="click">Clique para mais</p>
-                        </article>
-                    </a>
-                </div>
-            </div>
-        </section>
-        <section id="valores">
-            <div class="container">
-                <h2>Sobre Nós</h2><br>
-                <div class="valores">
-                    <article>
-                        <img src="imagens/alvo.png" alt="foto de um alvo">
+                <h2>Sobre Nós</h2>
+                <section class="sec-valores">
+                    <article class="article-valores">
+                        <img src="imagens/section-sobre-nos/alvo.png" alt="alvo">
                         <h3>Missão</h3>
                         <p>Nós da Lockers temos a missão de entregar uma experiência inesquecível à quem optar por caminhar ao nosso lado.</p>
                     </article>
-        
-                    <article>
-                        <img src="imagens/olho.png" alt="foto de um olho">
+                    <article class="article-valores">
+                        <img src="imagens/section-sobre-nos/olho-editado.png" alt="olho">
                         <h3>Visão</h3>
-                        <p>Buscamos nos tornar uma empresa líder em tecnologia e inovação.</p>
+                        <p>Buscamos nos tornar uma empresa líder em tecnologia e inovação..</p>
                     </article>
-        
-                    <article>
-                        <img src="imagens/valores.png" alt="imagem de tarefa">
+                    <article class="article-valores">
+                        <img src="imagens/section-sobre-nos/valores.png" alt="valores">
                         <h3>Valores</h3>
                         <ul>
                             <li>Respeito</li>
@@ -153,48 +277,64 @@
                             <li>Leveza</li>
                         </ul>
                     </article>
-                </div>
+                </section>
             </div>
         </section>
-        <section id="about">
-            <div>
-                <h2>Contato</h2>
-                <div class="articles">
-                    <article>
+        <section id="contato">
+            <div class="container">
+                <div class="row">
+                    <h2>Contato</h2>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-md-6">
                         <h3>Falamos com você</h3>
-                        <form id="form-contato">
-                            <input id="nome" type="text" placeholder="Seu nome completo"><br>
-                            <p class="error">
-                                nome não está completo
-                            </p>
-                            <input id="email" type="email" placeholder="Seu email"><br>
-                            <input id="telefone" type="tel" placeholder="Seu telefone"><br>
-                            <textarea id="mensagem" placeholder="Sua mensagem" cols="30" rows="10"></textarea>
-                            <button type="submit">Enviar</button>
-                            <p class="sucess-message">
-                            </p>
+                        <form>
+                            <label class="form-label" for="nome">Nome</label>
+                            <input id="nome" class="form-control" type="text" placeholder="Ex: Bruno" required>
+                            <label class="form-label" for="email">E-mail</label>
+                            <input id="email" class="form-control" type="email" placeholder="Ex: bruno@exemplo.com" required>
+                            <label class="form-label" for="telefone">Telefone</label>
+                            <input id="telefone" class="form-control" type="tel" placeholder="(00) 00000-0000" required>
+                            <label class="form-label" for="modalidade">Alugar/Comprar</label>
+                            <select id="modalidade" class="form-select">
+                                <option selected disabled>Selecione</option>
+                                <option>Alugar</option>
+                                <option>Comprar</option>
+                            </select>
+                            <label class="form-label" for="produto">Produto</label>
+                            <input id="produto" class="form-control" type="text" name="produto">
+                            <label class="form-label" for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" class="form-control mb-4" style="resize: none; height: 150px;"></textarea>
+                            <button class="botao botao-enviar" type="submit">Enviar</button>
                         </form>
-                    </article>
-                    <article>
-                        <h3>Fale Conosco</h3>
-                        <a href="tel: 84996398187">Telefone: 84996398187</a>
-                        <a href="mailto: empresalockers@gmail.com">Email: empresalockers@gmail.com</a>
-                        <a href="https://www.facebook.com/sigalockers" -blank><img src="imagens/logoface.png" alt="Logo facebook"></a>
-                        <a href="https://www.instagram.com/sigalockers/" -blank><img src="imagens/Instagram_icon25.png" alt="logo do instagram"></a>
-                    </article>
-        
+                    </div>
+                    <div id="fale-conosco" class="col-md-5">
+                        <h3>Fale conosco</h3>
+                        <h4>Redes sociais</h4>
+                        <a href="https://www.instagram.com/sigalockers/" target="_blank"><img class="redes-sociais-img" src="imagens/icon/Instagram_icon25.png" alt="Símbolo instagram"></a>
+                        <a href="https://www.facebook.com/sigalockers" target="_blank"><img class="redes-sociais-img" src="imagens/icon/logoface_p.png" alt="Símbolo facebook"></a>
+                        <h4>Telefone</h4>
+                        <a class="fale-conosco-link" href="tel: 84996398188">(84) 9 9639-8188</a>
+                        <h4>E-mail</h4>
+                        <a class="fale-conosco-link" href="mailto: empresalockers@gmail.com">empresalockers@gmail.com</a>
+                        <h4>Endereço</h4>
+                        <a class="fale-conosco-link" href="https://www.google.com/maps/place/Lockers+Loca%C3%A7%C3%A3o+de+Arm%C3%A1rios/@-5.878084,-35.1743299,15z/data=!4m6!3m5!1s0x7b2fff5fd475edd:0xe4950ebde486ad4b!8m2!3d-5.878084!4d-35.1743299!16s%2Fg%2F11mvzbcrb8" target="_blank"><address>R. Erivan França, 101B - Ponta Negra, Natal - RN, 59090-100</address></a>
+                        <a href="https://www.google.com/maps/place/Lockers+Loca%C3%A7%C3%A3o+de+Arm%C3%A1rios/@-5.878084,-35.1743299,15z/data=!4m6!3m5!1s0x7b2fff5fd475edd:0xe4950ebde486ad4b!8m2!3d-5.878084!4d-35.1743299!16s%2Fg%2F11mvzbcrb8" target="_blank"><img class="rounded mt-2" src="imagens/icon/maps.png" alt="foto do maps ponta negra natal rn"></a>
+                    </div>
                 </div>
             </div>
         </section>
-        <footer>
-            <div>
-                <p>&copy; Direitos reservados Lockers Locação de Armários</p>
-                <img src="imagens/logo_lockers_80.png" alt="logo da lockers">
+        <footer id="rodapé" style="background-color: #181818; color: white;">
+            <div class="d-flex justify-content-between align-items-center container">
+                <p class="m-0 pe-1">&copy; Direitos reservados Lockers Locação de Armários</p>
+                <img src="imagens/icon/logo_lockers_80.png" alt="logo da lockers">
             </div>
         </footer>
-    </div>
+    </main>
 
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

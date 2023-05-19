@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -8,15 +6,7 @@
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-}
-
-strong{
-    color: #EA542D;
-    font-weight: bold;
-}
-
-a{
-    text-decoration: none;
+    list-style: none;
 }
 
 body{
@@ -24,333 +14,326 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+section{
+    margin-bottom: 40px;
+}
+
+strong{
+    color: #06a800;
+}
+
+body h2{
+    font-weight: 700;
+    color: #EA542D;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #00000027;
+    padding-bottom: 8px;
+}
+
+body h3{
+    font-family: 'Roboto Mono', sans-serif;
+    color: #EA542D;
+    font-size: 24px;
+}
+
+body h4{
+    font-size: 24px;
+    margin: 0;
+    color: #EA542D;
+    margin-bottom: 5px;
+}
+
+body h5{
+    font-weight: bolder;
+    margin: 5px 0;
+}
+
+i{
+    margin-right: 8px;
+}
+
+main img{
+    width: 100%;
+}
+
+.preco{
+    font-size: 16.5px;
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.botao{
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
 header.navbar{
-    background-color: #EA542D;
+    background-image: linear-gradient(to right, #EA542D, #EA2D2D);
     padding: 15px 0;
 }
 
-.navbar img{
-    max-height: 60px;
+header.navbar img{
+    max-height: 50px;
 }
 
 nav .nav-pills .nav-link{
     color: white;
-    font-size: 130%;
+    font-size: 110%;
     font-weight: bolder;
 }
 
-nav .nav-pills .nav-link:hover{
+header nav .nav-pills .nav-link:hover{
     color: white;
 }
 
-nav .nav-pills .nav-link.active{
+header nav .nav-pills .nav-link.active{
     background-color: white;
     color: #EA542D;
 }
 
-.navbar .navbar-toggler{
+header.navbar .navbar-toggler{
     border: none;
 }
 
-.navbar .navbar-toggler-icon{
-    background-image: url(imagens/menu-hamburguer.png);
+header.navbar .navbar-toggler-icon{
+    background-image: url(imagens/icon/menu-hamburguer.png);
 
 }
 
-.navbar .navbar-toggler:focus{
+header.navbar .navbar-toggler:focus{
     box-shadow: none;
 }
 
-#praia #carousel{
-}
-
 #praia #carousel .carousel-item img{
-    height: 80vh;
-}
-
-h2{
-font-weight: bold;
-font-size: 50px;    
-margin: 40px 0px 40px 70px;
-color: #EA542D;
-}
-
-#lockers .container{
-    display: flex;
-    flex-wrap: wrap;
-    border-radius: 40px;
-    background-color: white;
-    justify-content: space-between;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    margin: 60px auto ;
-    align-items: center;
-}
-#lockers .container img{
-    border-radius: 40px;
-    max-width: 90%;
-    margin: auto;
-}
-#lockers .container article{
-    width: 50%;
-}
-
-#lockers .container article p{
-    font-size: 20px;
-    margin-left: 70px;
-    margin-top: 15px;
-    margin-right: 70px;
-}
-
-#lockers .container article a{
-    color: #f7f3f2;
-    background-color: green;
-    padding: 15px;
-    font-size: 25px;
-    font-weight: bold;
-    width: 200px;
-    margin: 30px 0px 30px 70px;
-    display: block;
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-#lockers .container article a:hover{
-    background-color: rgb(0, 95, 0);
-    transform: scale(1.03);
-    transition: 0.5s;
-}
-
-.vendas{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.vendas h3{
-    font-size: 25px;
-    font-weight: bold;
-    margin: 30px auto 10px 20px;
-    color: #EA542D;
-}
-
-.vendas p{
-    margin-left: 10px;
-    font-size: 17px;
-    padding: 10px;
-}
-.vendas .price{
-    color: black;
-    font-weight: bolder;
-}
-
-.vendas .click{
-    color: green;
-    text-align: center;
-    padding-bottom: 35px;
-
-}
-
-.vendas a{
-    width: 30%;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 40px;
-    margin: 0;
-}
-
-.vendas a:hover{
-    transform: scale(1.03);
-    transition: 0.5s;
-}
-
-.vendas article{
     width: 100%;
-    background-color: white;
-    border-radius: 40px;    
-
 }
 
-.vendas article img{
-    width: 100%;
-    border-radius: 40px;
+#lockers article{
+    display: grid;
+    grid-template-columns: 48.5% 48.5%;
+    column-gap: 3%;
 }
 
-#valores .valores{
-    display: flex;
-    justify-content: space-between;
-}
-
-#valores .valores article{
-    width: 30%;
-    background-color: white;
-    border-radius: 40px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    
-}
-
-#valores .valores article img{
-    height: 100px;    
-    display: block;
-    margin: 30px auto 10px auto;
-}
-
-#valores .valores article h3 {
-    font-size: 25px;
-    text-align: center;
-    font-weight: bolder;
-    color: #EA542D;
-}
-
-#valores .valores article p{
-    width: 90%;
-    margin: 30px auto;
-    padding: 0 30px;
-    font-size: 17px;
+#lockers p{
+    font-size: 18px;
     text-align: justify;
 }
 
-#valores .valores article ul{
-    width: 90%;
-    margin: 30px auto;
+#lockers .corpo-modal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#lockers .sobre-armarios button{
+    padding: 10px 15px 11px 15px;
+    background-color: #06a800;
+}
+
+#lockers .sobre-armarios button.b-reservar{
+    padding: 5px 8px 6px 8px;
+}
+
+#lockers .sobre-armarios button.b-cancel{
+    background-color: #c20000;
+    padding: 5px 8px 6px 8px;
+}
+
+#lockers .card .card-header{
+    background-color: #EA542D;
+    color: white;
+}
+
+#surf .nav.nav-pills .nav-link{
+    border-radius: 5px 5px 0px 0px;
+    color: #c72800;
+}
+
+#surf .nav.nav-pills .nav-link.active{
+    border-radius: 5px 5px 0px 0px;
+    background-color: #ffeae6;
+    color: #9a1f00;
+}
+
+#surf .struc-ecommerce{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    column-gap: 1.33333%;
+    background-color: #ffeae6;
+    padding: 15px 15px 0px 15px;
+}
+
+#surf .tab-pane .ecommerce-item{
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.107);
+    padding: 12px 18px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+#surf .tab-pane .ecommerce-item h3{
     font-size: 20px;
-    padding: 0 30px;
+}
+
+#surf .tab-pane .ecommerce-item .preco{
+    font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
+    font-style: normal;
+}
+
+#surf .tab-pane .ecommerce-item .b-comprar{
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    background-color: #06a800;
+    border-radius: 1px;
+    padding: 4px 0 5px 0;
+    margin-top: 15px;
+}
+
+#sobre-nos{
+    min-height: 80vh;
+}
+
+#sobre-nos .sec-valores{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    column-gap: 1.5%;
+}
+
+#sobre-nos img{
+    max-width: 100px;
+    margin: 30px auto;
+    display: block;
+}
+
+#sobre-nos article{
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.107);
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+#sobre-nos h3,
+#sobre-nos ul{
+    text-align: center;
+    padding-left: 0;
+    margin-bottom: 35px;
+}
+
+#sobre-nos p{
+    margin: 0 8px 45px 8px;
     text-align: center;
 }
 
-#about{
-    background-color: black;
-    margin: 100px 0px 0px 0px;
+#contato h3{
+    font-size: 27px;
+    margin-bottom: 20px;
 }
 
-#about > div{
-    width: 70%;
-    margin: auto;
-}
-
-#about h2{
-    color: white;
-    padding: 30px;
-    margin: 0px;
-}
-
-#about h3{
-    color: white;
-    padding: 20px 0px;
-    margin: 0px;
-    font-size: 25px;
-}
-
-#about a{
+#contato label{
     display: block;
-    padding-bottom: 15px;
-    color: white;
+    margin-top: 23px;
+    font-size: 20px;
+    color: #EA542D;
 }
 
-#about img{
+#contato input,
+#contato input::placeholder,
+#contato select{
+    color: #555;
+}
+
+#contato #fale-conosco h3{
+    margin-bottom: 28px;
+}
+
+#contato #fale-conosco h4{
+    font-size: 21px;
+    margin: 50px 0 10px 0;
+}
+
+#contato .fale-conosco-link{
+    color: #333;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif; font-weight: 400;
+}
+
+#contato .redes-sociais-img{
+    width: 25px;
+    margin-right: 10px;
+}
+
+#contato .botao-enviar{
+    display: block;
+    width: 100%;
+    background-color: #EA542D;
+    padding: 6px 0 7px 0;
+}
+
+#rodapé img{
+    width: auto;
+    margin: 5px 0;
     height: 30px;
 }
 
-#about .articles{
-    display: flex;
-    justify-content: space-between;
-}
-#about .articles article{
-    margin-bottom: 30px;
-}
-
-#about input, #about textarea{
-    width: 250px;
-    resize: none;
-    padding: 10px;
-    margin: 5px;
-}
-
-#about button{
-    display: block;
-    width: 250px;
-    padding: 10px;
-    margin: 5px;
-    color: white;
-    background-color: #EA542D;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-#about button:hover{
-    transform: scale(1.03);
-    transition: 0.5s;
-    cursor: pointer;
-}
-
-#about input:focus, #about textarea:focus{
-    outline-color: #EA542D;
-}
-
-.error{
-    color: #EA542D;
-    margin-left: 5px;
-    font-size: 15px;
-    display: none;
-}
-
-.sucess-message{
-    color: white;
-    background-color: #EA542D;
-    width: 250px;
-    margin: 15px 5px    ;
-    padding: 10px;
-    display: none;
-}
-
-.sucess-message strong{
-    color: white;
-}
 
 
-footer{
-    background-color: black;
-    padding: 30px;
-}
 
-footer div{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 70%;
-    margin: auto;
-}
 
-footer p {
-    color: white;
-}
 
-footer img{
-    width: 200px;
-}
 
-input.error1{
-    color: red;
-    border-color: red;
-    outline-color: red;
+
+
+
+@media screen and (max-width: 991px){
+    nav .nav.nav-pills{
+        margin-top: 20px;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px){
-    header.navbar{
-        font-size: 86%;
-    }
-    header.navbar img{
-        max-height: 50px;
+    #surf .struc-ecommerce{
+        grid-template-columns: 32% 32% 32%;
+        column-gap: 2%;
     }
 }
 
-@media screen and (max-width: 990px){
-    header.navbar{
-        font-size: 86%;
+@media screen and (min-width: 767px) and (max-width: 991px){
+    #surf .struc-ecommerce{
+        grid-template-columns: 49% 49%;
+        column-gap: 2%;
     }
+}
+
+@media screen and (max-width: 767px){
+    #lockers article,
+    #sobre-nos .sec-valores,
+    #surf .struc-ecommerce{
+        grid-template-columns: 100%;
+    }
+} 
+
+@media screen and (max-width: 500px){
     header.navbar img{
-        max-height: 50px;
+        max-height: 45px;
     }
-    nav .nav.nav-pills{
-        margin-top: 20px;
+}
+
+@media screen and (max-width: 414px){
+    #surf nav.nav.nav-pills{
+        flex-direction: column;
+    }
+
+    #surf .nav.nav-pills .nav-link.active{
+        border-radius: 5px;
+    }
+
+    #surf .struc-ecommerce{
+        margin-top: 10px;
     }
 }
